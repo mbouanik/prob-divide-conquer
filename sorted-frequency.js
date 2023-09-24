@@ -11,7 +11,7 @@ function sortedFrequency(arr, num) {
 }
 function firstInx(arr, num, l, r) {
   while (l <= r) {
-    m = Math.floor((r + l) / 2);
+    let m = Math.floor((r + l) / 2);
     if ((m === 0 || num > arr[m - 1]) && arr[m] === num) {
       return m;
     } else if (num > arr[m]) {
@@ -25,7 +25,7 @@ function firstInx(arr, num, l, r) {
 
 function lastIndx(arr, num, l, r) {
   while (l <= r) {
-    m = Math.floor((r + l) / 2);
+    let m = Math.floor((r + l) / 2);
     if ((m === arr.length - 1 || num > arr[m + 1]) && arr[m] === m) {
       return m;
     } else if (num < arr[m]) {
